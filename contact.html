@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>CONTACT US</title>
+        <link rel="icon" href="Images/favico.jpg" type="image/jpg">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+      <ul>
+        <li><a  href="index.html" id="home" onclick="home_but()">Home</a></li>
+        <li><a  href="book.html" id="book"   onclick="book_but()">Books</a></li>
+        <li><a href="about.html" id="about"  onclick="about_but()">About Us</a></li>
+        <li><a href="contact.html" id="contact" class="active" onclick="contact_but()">Contact Us</a></li>
+      </ul>
+       <h1 class="title">Contact Us</h1>
+       <h1 class="text">Welcome to my origami site's contact sectiom<br>
+        Here you can contact and discuss any queries with us<br>
+        We always try to contact as soon as possible.<br>
+        So, please be patient with us!
+       </h1>
+       <hr width="1325px">
+       <p class="text-red">Contact Us form and info is not to be displayed now!<br>Coming Soon!</p>
+       <br><br><br><br>
+       <div>
+        <p class="footer">For any queries, Get-In-Touch with us through the form in the contact page <br>
+            Or, contact directly the developer through <a href="mailto:saamriddha@gmail.com">saamriddha@gmail.com</a></p>
+      </div>
+</body>
+<script>
+    function home_but(){
+        document.getElementById("home").classList.add('active');
+        document.getElementById("book").classList.remove('active');
+        document.getElementById("about").classList.remove('active');
+        document.getElementById("contact").classList.remove('active');
+    }
+
+    function book_but(){
+        document.getElementById("home").classList.remove('active');
+        document.getElementById("book").classList.add('active');
+        document.getElementById("about").classList.remove('active');
+        document.getElementById("contact").classList.remove('active');
+    }
+    function about_but(){
+        document.getElementById("home").classList.remove('active');
+        document.getElementById("book").classList.remove('active');
+        document.getElementById("about").classList.add('active');
+        document.getElementById("contact").classList.remove('active');
+    }
+    function contact_but(){
+        document.getElementById("home").classList.remove('active');
+        document.getElementById("book").classList.remove('active');
+        document.getElementById("about").classList.remove('active');
+        document.getElementById("contact").classList.add('active');
+    }
+
+</script>
+</html>

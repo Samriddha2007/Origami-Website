@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Origami Website</title>
+        <link rel="icon" href="Images/favico.jpg" type="image/jpg">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <ul>
+            <li><a  href="index.html" id="home" class="active" onclick="home_but()">Home</a></li>
+            <li><a  href="book.html" id="book" onclick="book_but()">Books</a></li>
+            <li><a href="about.html" id="about" onclick="about_but()">About Us</a></li>
+            <li><a href="contact.html" id="contact" onclick="contact_but()">Contact Us</a></li>
+          </ul>
+          
+        <h1 class="title">Home</h1> 
+       <h1 class="text">Welcome to my origami site<br>
+       Here you can find lots of origami<br>
+       I teach here origami step by step<br>
+       Click on any of the photos to learn more about it. <br>
+      </h1>
+       
+       
+       <div class="project_of_origami" id="projects">
+
+        <div class="item">
+            <a href="http://origami.me/camel/"><img class="img" src="Images/O-Images/camel.png" width="300px" height="300px"/></a><br>
+            <p class="text-small">Camel &nbsp; Origami</p>
+        </div>
+        
+        <div class="item">
+            <a href="http://origami.me/chameleon/"><img class="img" src="Images/O-Images/chameleon.png" width="300px" height="300px"/></a><br>
+            <p class="text-small">Chameleon &nbsp; Origami</p>
+        </div>
+
+        <div class="item">
+            <a href="http://origami.me/flying-cicada/"><img class="img" src="Images/O-Images/cicada.png" width="300px" height="300px"/></a><br>
+            <p class="text-small">Cicada &nbsp; Origami</p>
+        </div>
+    </div>
+
+    <div class="project_of_origami">
+        <div class="item">
+            <a href="http://origami.me/panda/"><img class="img" src="Images/O-Images/panda.png" width="300px" height="300px"/></a><br>
+            <p class="text-small">Panda &nbsp; Origami</p>
+        </div>
+        
+        <div class="item">
+            <a href="http://origami.me/pigeon/"><img class="img" src="Images/O-Images/pigeon.png" width="300px" height="300px"/></a><br>
+            <p class="text-small">Pigeon &nbsp; Origami</p>
+        </div>
+        
+        <div class="item">
+            <a href="http://origami.me/teddy-bear/"><img class="img" src="Images/O-Images/teddy.png" width="300px" height="300px"/></a><br>
+            <p class="text-small">Teddy &nbsp; Origami</p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div>
+        <p class="footer">For any queries, Get-In-Touch with us through the form in the contact page <br>
+            Or, contact directly the developer through <a href="mailto:saamriddha@gmail.com">saamriddha@gmail.com</a></p>
+      </div>
+    </body>
+    <script>
+        function home_but(){
+            document.getElementById("home").classList.add('active');
+            document.getElementById("book").classList.remove('active');
+            document.getElementById("about").classList.remove('active');
+            document.getElementById("contact").classList.remove('active');
+        }
+
+        function book_but(){
+            document.getElementById("home").classList.remove('active');
+            document.getElementById("book").classList.add('active');
+            document.getElementById("about").classList.remove('active');
+            document.getElementById("contact").classList.remove('active');
+        }
+        function about_but(){
+            document.getElementById("home").classList.remove('active');
+            document.getElementById("book").classList.remove('active');
+            document.getElementById("about").classList.add('active');
+            document.getElementById("contact").classList.remove('active');
+        }
+        function contact_but(){
+            document.getElementById("home").classList.remove('active');
+            document.getElementById("book").classList.remove('active');
+            document.getElementById("about").classList.remove('active');
+            document.getElementById("contact").classList.add('active');
+        }
+
+    </script>
+    </html>
+
+    

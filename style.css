@@ -1,0 +1,154 @@
+body{
+    background: linear-gradient(rgb(4, 255, 138), blue);
+}
+.text{
+    font-family: "Blackadder ITC";
+    font-size: 50px;
+    text-align: center;
+}
+.text-red{
+  font-family: "Blackadder ITC";
+  font-size: 50px;
+  text-align: center;
+  color: red;
+}
+.title{
+    background-color: aquamarine;
+    width:1330px;
+    text-align: center;
+    color:red;
+    font-size:100px;
+    font-family: "Blackadder ITC";
+    margin-top: 58px;
+}
+.img{
+    background-color: azure;
+    width:300px;
+}
+.project_of_origami{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(217, 223, 226);
+}
+.text-small{
+    margin-top: 0%;
+    font-family: "Brush Script MT";
+    font-size: 40px;
+    text-align: center;    
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Blackadder ITC";  
+    font-size: 38px;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\21ca';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  a:link {
+    color:green
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 30px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 110px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+  .item{
+    margin-top: 50px;
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: -50;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    font-family: "Blackadder ITC";
+    font-size: 50px;
+    text-align: center;
+ }
+
+
+ 
