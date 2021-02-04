@@ -8,7 +8,7 @@ body{
 }
 .title{
     background-color: aquamarine;
-    width:1330px;
+    width:1500px;
     text-align: center;
     color:red;
     font-size:100px;
@@ -136,7 +136,7 @@ body{
     position: fixed;
     left: 0;
     bottom: -50;
-    width: 100%;
+    width: 150%;
     background-color: #111;
     color: white;
     font-family: "Blackadder ITC";
