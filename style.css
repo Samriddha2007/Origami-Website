@@ -14,7 +14,7 @@ body{
 }
 .title{
     background-color: aquamarine;
-    width:1430px;
+    width:1530px;
     text-align: center;
     color:red;
     font-size:100px;
@@ -142,7 +142,7 @@ body{
     position: fixed;
     left: 0;
     bottom: -50;
-    width: 100%;
+    width: 120%;
     background-color: #111;
     color: white;
     font-family: "Blackadder ITC";
