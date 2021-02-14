@@ -6,6 +6,12 @@ body{
     font-size: 50px;
     text-align: center;
 }
+.heading{
+    text-align: center;
+    color:red;
+    font-size:70px;
+    font-family: "Blackadder ITC";
+}
 .title{
     background-color: aquamarine;
     width:1330px;

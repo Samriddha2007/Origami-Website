@@ -2,24 +2,59 @@
     <head>
         <title>CONTACT US</title>
         <link rel="icon" href="Images/favico.jpg" type="image/jpg">
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="contact.css"/>
     </head>
     <body>
       <ul>
         <li><a  href="index.html" id="home" onclick="home_but()">Home</a></li>
         <li><a  href="book.html" id="book"   onclick="book_but()">Books</a></li>
         <li><a href="about.html" id="about"  onclick="about_but()">About Us</a></li>
-        <li><a href="contact.html" id="contact" class="active" onclick="contact_but()">Contact Us</a></li>
+        <li><a href="contact.html" id="communicate" class="active" onclick="contact_but()">Contact Us</a></li>
       </ul>
        <h1 class="title">Contact Us</h1>
-       <h1 class="text">Welcome to my origami site's contact sectiom<br>
-        Here you can contact and discuss any queries with us<br>
-        We always try to contact as soon as possible.<br>
-        So, please be patient with us!
-       </h1>
-       <hr width="1325px">
-       <p class="text-red">Contact Us form and info is not to be displayed now!<br>Coming Soon!</p>
-       <br><br><br><br>
+    <h1></h1>
+    <div class="">  
+        <form id="contact">
+          <h3 style="text-align: center; font-size: 30px;">Quick Contact</h3>
+          <h4 style="text-align: center;">Contact us today, and get reply with in 24 hours!</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+          </fieldset>
+       
+          <fieldset>
+            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="done!">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+
+    <div class="mapouter" style="background-color: aliceblue; width: 1330px;" >
+        <div class="gmap_canvas"><iframe width="1330" height="500" id="gmap_canvas"
+             src="https://maps.google.com/maps?q=Sarojini%20Pally%20Unnayan%20Samiti,%20Bijaylakshmi%20Colony,%20Sarojinipally,%20Chkravartipara,%20Barasat,%20Kolkata,%20West%20Bengal&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe><br><style>.mapouter{text-align:right;height:500px;width:600px;}</style>
+            
+            <style>.gmap_canvas {height:500px;width:600px;}</style></div>
+        <h1 class="text"><b style="color: yellow;">Our Address:</b><u> Sarojini Pally Unnayan Samiti, Bijaylakshmi Colony, Sarojinipally, Chkravartipara, Barasat, Kolkata, West Bengal</u><br> <b style="color: yellow;">Our Email:</b> <a href="mailto:saamriddha@gmail.com">saamriddha@gmail.com</a><br> <b style="color: yellow;">Our Phone No:</b> <u>9836735036</u></h1>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="image-container image-2">
+        <a href="https://www.facebook.com/samriddha.92"><img style=" margin: auto;" src="Images/Icons/facebook.svg" width="100px" height="100px"/></a>
+        <a href="https://www.instagram.com/samriddhabiswas/"><img src="Images/Icons/instagram.svg" width="100px" height="100px"/></a>
+        <a href="https://www.youtube.com/channel/UCCsuzrXw7f429VpPxVB0n2A"><img src="Images/Icons/youtube.svg" width="100px" height="100px"/></a>
+        <a href="https://github.com/Samriddha2007/"><img style=" margin: auto;" src="Images/Icons/github.svg" width="100px" height="100px"/></a>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+       
        <div>
         <p class="footer">For any queries, Get-In-Touch with us through the form in the contact page <br>
             Or, contact directly the developer through <a href="mailto:saamriddha@gmail.com">saamriddha@gmail.com</a></p>
@@ -30,26 +65,26 @@
         document.getElementById("home").classList.add('active');
         document.getElementById("book").classList.remove('active');
         document.getElementById("about").classList.remove('active');
-        document.getElementById("contact").classList.remove('active');
+        document.getElementById("communicate").classList.remove('active');
     }
 
     function book_but(){
         document.getElementById("home").classList.remove('active');
         document.getElementById("book").classList.add('active');
         document.getElementById("about").classList.remove('active');
-        document.getElementById("contact").classList.remove('active');
+        document.getElementById("communicate").classList.remove('active');
     }
     function about_but(){
         document.getElementById("home").classList.remove('active');
         document.getElementById("book").classList.remove('active');
         document.getElementById("about").classList.add('active');
-        document.getElementById("contact").classList.remove('active');
+        document.getElementById("communicate").classList.remove('active');
     }
     function contact_but(){
         document.getElementById("home").classList.remove('active');
         document.getElementById("book").classList.remove('active');
         document.getElementById("about").classList.remove('active');
-        document.getElementById("contact").classList.add('active');
+        document.getElementById("communicate").classList.add('active');
     }
 
 </script>
